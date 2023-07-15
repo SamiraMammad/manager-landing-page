@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin-top: 4rem;
+}
+.section_1{
+    width: 70%;
+    margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 0.8rem;
+}
+button{
+    padding: 0.8rem;
+    border-radius: 2rem;
+    width: 8rem;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px hsl(12, 87%, 73%);
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+}
+button:hover{
+    background-color: hsl(12, 73%, 61%);
+}
+.content{
+    display: flex;
+    margin-block: 3rem;
+    justify-content: space-between;
+    
+}
+.content h1{
+    font-size: 3rem;
+    color: hsl(228, 39%, 23%);
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+.slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 500px;
+}
+.slogan p{
+    font-size: 0.9rem;
+    color: hsl(227, 12%, 61%);
+    margin-bottom: 2rem;
+}
+section{
+    padding: 1rem;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+}
+.char{
+    width: 110%;
+}
+.intro{
+    width: 600px;
+}
+.about-manage-list{
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-manage-title{
+    font-size: 1rem;
+  }
+  .about-manage-item {
+    position: relative;
+  }
+  .about-manage-item::before {
+    content: counter(item, decimal-leading-zero);
+    counter-increment: item;
+    position: absolute;
+    left:- 90px;
+    top: 0.2em;
+    font-weight: bold;
+    margin-right: 0.5em;
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 20px;
+    padding: 10px 25px;
+    color: white;
+  }
+  .item-title{
+    margin-bottom: 1em; 
+    background-color: var(--bg-decoration-color);
+    padding: 10px 0px 10px 80px;
+    border-radius:20px;
+    color:  hsl(228, 39%, 23%);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .item-description{
+    padding-left: 0em; 
+    margin-bottom: 1em; 
+  }
+  .content2{
+    display: flex;
+    justify-content: space-around;
+    gap: 7rem;
+  }
+  .content2 h2{
+    font-size: 2.2rem;
+    color:  hsl(228, 39%, 23%);
+
+  }
+  .about-manage-item{
+    display: flex;
+    flex-direction: column;
+  }
+ .about-manage-list{
+    display: flex;
+    flex-direction: column;
+ }
+ .description{
+    margin-left: 80px;
+ }
+.username{
+ background-color: rgba(236, 230, 230, 0.41); 
+ border-radius: 8px;
+ padding: 2rem;
+ position: relative;
+ width: 40%;
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.profil-photo{
+    width: 100%;
+   
+}
+.comments-title{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    width: 50px;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.username{
+    text-align: center;
+}
+.name{
+   display: inline-block;
+   margin-block: 0.6rem;
+}
+
+.teamwork{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    background-color: hsl(12, 88%, 59%);
+    margin-top: 5rem;
+    width: 100%;
+    height: 25vh;
+}
+.teamwork h1{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 10rem; */
+    padding: 5rem;
+}
+.logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact ul{
+   display: flex;
+   gap: 1rem;
+   cursor: pointer;
+}
+.contact ul :hover{
+    background-color: hsl(12, 88%, 59%);
+    
+}
+a{
+    text-decoration: none;
+    color: hsl(228, 39%, 23%);
+    font-weight: 600px;
+}
+a:hover{
+    color: gray;
+}
+.menu-footer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  column-gap: 12rem; 
+  row-gap: 1.3rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-footer a{
+    color: white;
+}
+.footer-button{
+    padding: 0.6rem;
+    width: 4rem;
+}
+input{
+    padding: 0.9rem;
+    border-radius: 2rem;
+    width: 13rem;
+}
+.footer-right{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 20rem;
+   position: relative;
+
+}
+.footer-right span{
+    color: hsl(227, 12%, 61%);
+    font-size: 0.7rem;
+    position: absolute;
+    left: 4rem;
+}
+.teamwork h1{
+    color: white;
+}
+.user_comment{
+    font-size: 15px;
+    color: rgb(172, 172, 172);
+}
+.comment_section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.comments-button{
+   margin-block: 3rem;
+}
+.team-button{
+    color: hsl(12, 88%, 59%) ;
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    width: 9rem;
+    border: 0;
+    cursor: pointer;
+    height: 5vh;
+}
+.team-button:hover{
+    background-color: white;
+}
+.footer-button{
+    box-shadow: none;
+}
+.content2_about{
+   margin-top: 2rem;
+   line-height: 1.8rem;
+   margin-right: 3rem;
+}
+.slogan p{
+    padding-block: 1rem;
+    font-size: 1rem;
+    margin-right: 8rem;
+    line-height: 1.8rem;
+}
+p{
+    color: gray;
+}
+ol{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.item-text{
+    padding-block: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
